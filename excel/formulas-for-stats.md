@@ -34,3 +34,14 @@ Sum product of values in cell ranges
 ```
 =SUMPRODUCT(A1:A10;B1:B10)
 ```
+
+Intra-quartile range (see more on quartile at http://stattrek.com/statistics/dictionary.aspx?definition=Interquartile%20range)
+```
+=QUARTILE(B2:B101,3)-QUARTILE(B2:B101,1)
+```
+Some operators end in **IF** (**COUNTIF**, **COUNTIFS**, **SUMIF**). They accept a range of cells and a conditional. The **&** evaluates the formula to a number to use in the expression. See more at https://support.google.com/docs/answer/3093480?hl=en.
+```
+=COUNTIF(B2:B101, ">"&AVERAGE(B2:B101))
+```
+
+More information on statistical functions in Google Sheets: https://support.google.com/docs/topic/3105600?hl=en&ref_topic=3046366
