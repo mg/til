@@ -35,6 +35,13 @@ Sum product of values in cell ranges
 =SUMPRODUCT(A1:A10;B1:B10)
 ```
 
+Cumulative Sums: use the absolute reference operator
+```
+=SUM($D$2:D2)
+=SUM($D$2:D3)
+=SUM($D$2:D4)
+```
+
 Intra-quartile range (see more on quartile at http://stattrek.com/statistics/dictionary.aspx?definition=Interquartile%20range)
 ```
 =QUARTILE(B2:B101,3)-QUARTILE(B2:B101,1)
