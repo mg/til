@@ -18,8 +18,6 @@ Current release channel is defined in ``/etc/coreos/update.conf`` and can be one
 GROUP=stable
 ```
 After changing the channel run ``sudo systemctl restart update-engine`` to restart update engine.
-### Cluster discovery
-
 ### cloud-config
 Configuration for the bootstrap mechanic in CoreOS, *coreos-cloudinit*. A *YAML* formatted file (use <https://coreos.com/validate/> to validate) that must start with the line ``#cloud-config``. Frequently used sections are
 - ``coreos`` for handling CoreOS specifics like ``update`` reboot strategy, ``etcd2``, ``fleet``, ``fannel``, ``units`` etc.
