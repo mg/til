@@ -95,6 +95,7 @@ function* loginFlow() {
     yield take('LOGOUT')
     yield cancel(task)
     yield call(Api.clearItem('token'))
+    yield put({type: 'CLEAR_STATE'})
   }
 }
 
