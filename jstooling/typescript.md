@@ -43,3 +43,6 @@ module.exports = {
   "build": "rm -rf ./dist/ && rm -rf ./tsDist/ && tsc && webpack && open index.html"
 }
 ```
+
+### Step 4: Start migrating
+Rename an existing .js/.jsx file to .ts and build/fix *ts* errors.
