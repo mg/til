@@ -14,11 +14,12 @@ function* generator(i) {
 }
 
 const gen= generator(1)
-gen.next()                                // In: 1
-let ret= gen.next('A')                    // Result from yield: A
-console.log(`Result from gen: ${ret}`)    // Result form gen: 2
-let ret= gen.next('B')                    // Result from yield: B
-console.log(`Result from gen: ${ret}`)    // Result form gen: 3
+let ret= gen.next()                                                 // In: 1
+console.log(`Result from gen: ${ret.value}, done:  ${ret.done}`)    // Result form gen: 2, done: false
+ret= gen.next('A')                                                  // Result from yield: A
+console.log(`Result from gen: ${ret.value}, done:  ${ret.done}`)    // Result form gen: 3: done: false
+let ret= gen.next('B')                                              // Result from yield: B
+console.log(`Result from gen: ${ret}`)                              // Result form gen: undefined, done: true
 ```
 
 ## Consumption
