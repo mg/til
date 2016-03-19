@@ -45,7 +45,7 @@ function fadeInOutUp(Component) {
 }
 ```
 
-Using the animaiton component
+Using the animation component
 ```js
 @fadeInOutUp({distance: 10})
 const Box= () => <div className="box"/>
