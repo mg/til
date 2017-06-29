@@ -1,4 +1,4 @@
-# TMux
+# tmux
 
 - *Prefix* + **:**: Go into **command mode**
 
