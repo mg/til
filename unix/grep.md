@@ -26,18 +26,18 @@
 
  - ``*``: Match zero or more of the previous character in the pattern.
 
- - ``\?``: Match the previous character in the pattern zero or one time. 
+ - ``\?``: Match the previous character in the pattern zero or one time.
 
-  - ``\+``: Match the previous character in the pattern one or more times.
+ - ``\+``: Match the previous character in the pattern one or more times.
 
-  - ``\|``: Join to expressions together to search for **either** of them.
+ - ``\|``: Join to expressions together to search for **either** of them.
 
-  - ``^``: Anchor the expression to the beginning of the line.
+ - ``^``: Anchor the expression to the beginning of the line.
 
-  - ``$``: Anchor the expression to the end of the line.
+ - ``$``: Anchor the expression to the end of the line.
 
-  - ``[]``: Create a character class to search for. Use ``-`` to create a range.
+ - ``[]``: Create a character class to search for. Use ``-`` to create a range.
 
-  - ``()``: Create a group of matches.
+ - ``()``: Create a group of matches.
 
-  - Use ``-E`` to enable **extended** regular expressions and skip the ``\``.
+ - Use ``-E`` to enable **extended** regular expressions and skip the ``\``.
